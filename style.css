@@ -1,0 +1,600 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+:root {
+    --bg-color: black;
+    --header-color: white;
+    --main-color: #6e54fa;
+    --text-color: #221314;
+    --button-bg: #00ffff;
+    --button-text: black;
+    --highlight-color: crimson;
+}
+
+
+nav {
+    background-color: var(--header-color);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#main1 .main1 .img1 img {
+    width: 60%;
+    height: auto;
+}
+nav h1 {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+}
+
+
+.starterpage {
+    height: 100vh;
+    background: linear-gradient(rgba(77, 41, 176, 0.5), rgba(0, 0, 0, 0.5)), url('./home-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-color);
+    text-align: center;
+}
+
+.starterpage h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.starterpage button {
+    background-color: var(--button-bg);
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.appteam {
+    padding: 80px 10%;
+    background-color: var(--bg-color);
+    color: var(--header-color);
+    text-align: center;
+}
+
+.appteam h1 {
+    margin-bottom: 40px;
+}
+.p1,p{
+    word-spacing: 2px;
+}
+.mn2.mn21.h2{
+    color: chocolate;
+}
+
+.appteam .team-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.appteam .team-card {
+    background-color: white;
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.learnmore {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: var(--highlight-color);
+    color: var(--header-color);
+}
+
+.learnmore button {
+    background-color: var(--button-bg);
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.screenshots {
+    padding: 80px 10%;
+    background-color: var(--bg-color);
+    color: var(--header-color);
+    text-align: center;
+}
+
+.screenshots .mn41 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.screenshots img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.apppricing {
+    padding: 80px 10%;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+.apppricing h1 {
+    margin-bottom: 40px;
+}
+
+.apppricing .pricing-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.apppricing .pricing-card {
+    background-color: white;
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.subscribe {
+    padding: 60px 10%;
+    background-color: var(--highlight-color);
+    color: var(--header-color);
+    text-align: center;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    border-radius: 25px;
+    width: 50%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.subscribe button {
+    background-color: var(--button-bg);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.foot {
+    background-color: var(--bg-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--header-color);
+}
+
+.foot .f2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.foot i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.foot i:hover {
+    color: var(--main-color);
+}
+
+.team-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.team-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.team-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover img {
+    transform: scale(1.1); 
+}
+
+.team-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-name {
+    opacity: 1;
+}
+.pricing-cards {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.pricing-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05); 
+}
+
+.cr1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cr2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.btn1, .btn2, .btn3 {
+    margin-top: 20px;
+}
+.menu-toggle{
+    display: none;
+}
+button {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #007b8a;
+}
+.mn41 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.mn41 div {
+    flex: 1; 
+    max-width: 23%;
+}
+
+.mn41 img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.apps {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.apps li {
+    padding: 15px;
+}
+
+.apps a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.apps i {
+    margin-right: 8px;
+}
+
+.main4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    gap: 20px;
+}
+.mn4 {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.mn41 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%; 
+}
+
+.mn41 img {
+    width: 100%; 
+    max-width: 280px; 
+    height: auto;
+}
+
+
+@media screen and (max-width: 320px) {
+    .main4 {
+        padding: 20px;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        /* left: 50px; */
+        right:25px;
+        margin-right: 10px;
+   }  
+
+    .mn41 {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .mn41 img {
+        width: 150%; 
+        margin-bottom: 10px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+       /* .hamburger {
+         display: block;
+         position: absolute;
+         margin-left: 290px;
+    }    */
+    .screenshots .mn41 {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .screenshots img {
+        width: 200rem;
+        max-width: 180%;
+    }
+
+    .apps {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .apps li {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-toggle:checked + .hamburger + .apps {
+        display: block; 
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .hamburger{
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+   
+    .starterpage h1 {
+        font-size: 36px;
+    }
+
+    .starterpage button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    .appteam {
+        padding: 60px 5%;
+    }
+
+    .appteam h1 {
+        font-size: 28px;
+    }
+
+    .appteam .team-cards {
+        flex-direction: column;
+    }
+
+    .appteam .team-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .screenshots .mn41 {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .screenshots img {
+        width: 200rem;
+        max-width: 190%;
+    }
+
+  
+    .apppricing .pricing-cards {
+        flex-direction: column;
+    }
+
+    .apppricing .pricing-card {
+        width: 100%;
+    }
+
+   
+    .subscribe input[type="email"] {
+        width: 80%;
+    }
+
+    .subscribe button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+
+@media  screen and (max-width: 425px) {
+
+    
+    nav h1 {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    
+    .starterpage h1 {
+        font-size: 28px;
+    }
+
+   
+    .appteam .team-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+   }
+
+   
+    .foot .f2 {
+        flex-direction: row;
+    }
+
+    .foot i {
+        font-size: 20px;
+    }
+    @media (max-width: 425px){
+      .apppricing.pricing-cards{
+            flex-direction: column;
+        }
+    }
+}
